@@ -1,0 +1,28 @@
+@import "tailwindcss";
+.amiri-regular {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* index.css */
+.leaflet-container {
+  height: 300px;
+  width: 100%;
+}
+
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px;
+  background: url('/Emailcheck.gif') no-repeat center / cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar.looking {
+  transform: translateX(5px); /* ينظر يمين/يسار حسب الحقل */
+}
+
+.avatar.blinking {
+  background: url('/ForgotPassword.gif') no-repeat center / cover; /* يغلق عيونه */
+}
